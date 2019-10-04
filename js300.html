@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>obtener info con elñ objeto document</title>
+	<script type="text/javascript">
+			
+		function saludar(){
+		//diferentes maneras de recuperar información de un formulario
+		
+		var nombre1 = document.formulario.campo1.value; 
+		var nombre2 = document.getElementsByName('campo1')[0].value;
+		alert(nombre1)
+		alert(nombre2)
+		console.log(formulario)
+		document.formulario.campo2.value = nombre2;
+		}
+	</script>
+
+
+	</script>
+</head>
+<body>
+	<form name='formulario'>
+		<label>Escribe tu nombre: </label>
+		<input type="text" name="campo1">
+		<input type="button" value="Enviar formulario" onclick="saludar()">
+		<input type="text" name="campo2">
+	</form>
+</body>
+</html>
